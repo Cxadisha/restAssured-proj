@@ -54,6 +54,6 @@ public class RestAssuredBasics {
                 .get("/circuits/{circuitId}.json")
                 .then()
                 .assertThat()
-                .body("MRData.CircuitTable.Circuits.Location[0].country", equalTo(country));
+                .body("MRData.CircuitTable.Circuits.Location[1].country", equalTo(country));
     }
 }
